@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" >
+<body ng-app="app">
+<p ng-controller="ctrl" ng-bind="var_one"></p>
+<script src="bower_componant/angular/angular.min.js"></script>
+<script src="app.js"></script>
+<script src="controllers/ctrl.js"></script>
+<script>
+    var app = angular.module("app",[]);
+    app.controller("ctrl",my_fun);
+    function my_fun($scope) {
+        $scope.var_one = "4546";
+
+    }
+</script>
+</body>
+</html>
